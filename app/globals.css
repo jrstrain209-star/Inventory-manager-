@@ -356,3 +356,159 @@ h2 {
     margin-top: 34px;
   }
 }
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-bottom: 24px;
+  color: var(--primary-dark);
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.store-detail-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.store-detail-icon {
+  display: grid;
+  width: 56px;
+  height: 56px;
+  flex: 0 0 auto;
+  place-items: center;
+  border-radius: 17px;
+  background: var(--primary-soft);
+  color: var(--primary-dark);
+}
+
+.store-detail-location {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  margin: 9px 0 0;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+.store-detail-location svg {
+  flex: 0 0 auto;
+  margin-top: 2px;
+}
+
+.store-summary {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.store-summary div {
+  padding: 17px;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.store-summary span,
+.store-summary strong {
+  display: block;
+}
+
+.store-summary span {
+  margin-bottom: 5px;
+  color: var(--text-muted);
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.store-summary strong {
+  font-size: 1.8rem;
+}
+
+.requirements-list {
+  display: grid;
+  gap: 12px;
+}
+
+.requirement-card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 17px;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.requirement-main {
+  min-width: 0;
+  flex: 1;
+}
+
+.requirement-location {
+  margin: 0 0 4px;
+  color: var(--primary);
+  font-size: 0.76rem;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.requirement-card h3 {
+  margin: 0;
+  font-size: 1.15rem;
+}
+
+.requirement-name,
+.requirement-notes {
+  margin: 5px 0 0;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+.quantity-badge {
+  display: grid;
+  width: 58px;
+  height: 58px;
+  flex: 0 0 auto;
+  place-items: center;
+  border-radius: 16px;
+  background: var(--primary-soft);
+  color: var(--primary-dark);
+  text-align: center;
+}
+
+.quantity-badge span,
+.quantity-badge strong {
+  display: block;
+}
+
+.quantity-badge span {
+  font-size: 0.68rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.quantity-badge strong {
+  font-size: 1.35rem;
+}
+
+.primary-action {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-top: 26px;
+  padding: 16px;
+  border-radius: 17px;
+  background: var(--primary);
+  color: white;
+  font-weight: 900;
+  text-decoration: none;
+  box-shadow: var(--shadow);
+}
