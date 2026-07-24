@@ -1,3 +1,4 @@
+import Link from "next/link";
 import {
   AlertTriangle,
   Boxes,
@@ -143,7 +144,25 @@ export default function HomePage() {
           <Map size={20} />
           <span>Routes</span>
         </button>
-      </nav>
-    </main>
-  );
+      <nav className="mobile-nav" aria-label="Main navigation">
+  <Link className="nav-item active" href="/">
+    <Boxes size={20} />
+    <span>Dashboard</span>
+  </Link>
+
+  <Link className="nav-item" href="/stores">
+    <Building2 size={20} />
+    <span>Stores</span>
+  </Link>
+
+  <Link className="nav-item" href="/inventory">
+    <PackageSearch size={20} />
+    <span>Inventory</span>
+  </Link>
+
+  <Link className="nav-item" href="/routes">
+    <Map size={20} />
+    <span>Routes</span>
+  </Link>
+</nav>
 }
