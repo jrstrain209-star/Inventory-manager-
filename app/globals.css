@@ -24,10 +24,7 @@ body {
   margin: 0;
   background: var(--background);
   color: var(--text);
-  font-family:
-    Arial,
-    Helvetica,
-    sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 button,
@@ -174,7 +171,9 @@ h2 {
   border: 1px solid var(--border);
   border-radius: 18px;
   background: var(--surface);
+  color: inherit;
   text-align: left;
+  text-decoration: none;
   box-shadow: var(--shadow);
   cursor: pointer;
 }
@@ -235,6 +234,7 @@ h2 {
   color: var(--text-muted);
   font-size: 0.7rem;
   font-weight: 700;
+  text-decoration: none;
 }
 
 .nav-item.active {
@@ -242,35 +242,6 @@ h2 {
   color: var(--primary-dark);
 }
 
-@media (min-width: 640px) {
-  .app-shell {
-    padding: 36px 28px 120px;
-  }
-
-  .summary-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .actions-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (min-width: 960px) {
-  .app-shell {
-    padding-bottom: 48px;
-  }
-
-  .summary-grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
-
-  .mobile-nav {
-    position: static;
-    max-width: none;
-    margin-top: 34px;
-  }
-}
 .stores-list {
   display: grid;
   gap: 13px;
@@ -356,6 +327,32 @@ h2 {
   margin-bottom: 0;
 }
 
-.mobile-nav a.nav-item {
-  text-decoration: none;
+@media (min-width: 640px) {
+  .app-shell {
+    padding: 36px 28px 120px;
+  }
+
+  .summary-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .actions-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 960px) {
+  .app-shell {
+    padding-bottom: 48px;
+  }
+
+  .summary-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .mobile-nav {
+    position: static;
+    max-width: none;
+    margin-top: 34px;
+  }
 }
