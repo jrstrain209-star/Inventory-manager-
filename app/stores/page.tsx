@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Building2, ChevronRight, MapPin } from "lucide-react";
+import { Building2, ChevronRight, MapPin, Plus } from "lucide-react";
 import { supabase } from "@/lib/supabase";
 
 type Store = {
@@ -39,7 +39,10 @@ export default async function StoresPage() {
           </p>
         </div>
 
-        <div className="profile-badge">JS</div>
+        <Link className="header-add-button" href="/add?type=store">
+          <Plus size={19} />
+          Add store
+        </Link>
       </header>
 
       <section className="stores-list">
